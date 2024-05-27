@@ -1,0 +1,42 @@
+$--color-primary: teal;
+
+@use 'element-plus/theme-chalk/src/index.scss' as *;
+
+.el-button:focus,
+.el-button:hover {
+  color: var(--el-color-primary);
+  border-color: var(--el-color-primary-light-7);
+  background-color: var(--el-color-primary-light-9);
+  outline: 0;
+}
+
+.el-button {
+  font-family: NunitoLight;
+  font-weight: 400;
+}
+
+.card-common.el-card {
+  border: none !important;
+  border-radius: 12px !important;
+}
+
+.el-dialog {
+  border-radius: 6px !important;
+}
+
+.el-input__inner {
+  font-family: NunitoLight;
+}
+
+.el-input__inner::placeholder {
+  font-family: NunitoLight;
+}
+.el-input input::-webkit-input-placeholder {
+  font-family: NunitoLight !important;
+}
+.el-input input::-moz-input-placeholder {
+  font-family: NunitoLight !important;
+}
+.el-input input::-ms-input-placeholder {
+  font-family: NunitoLight !important;
+}

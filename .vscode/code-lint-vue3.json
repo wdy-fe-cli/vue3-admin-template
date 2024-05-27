@@ -1,0 +1,38 @@
+{
+  "root": true,
+  "env": {
+    "node": true,
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "vue/setup-compiler-macros": true
+  },
+  "extends": ["plugin:vue/vue3-essential", "eslint:recommended", "@vue/eslint-config-prettier"],
+  "parser": "vue-eslint-parser",
+  // 解析器的配置项
+  "parserOptions": {
+    "ecmaVersion": "latest", // 支持的es版本
+    "sourceType": "module", // 模块类型，默认为script，我们设置为module
+    // 额外的语言类型
+    "ecmaFeatures": {
+      "tsx": true,
+      "jsx": true
+    }
+  },
+  "plugins": ["jsx"],
+  "rules": {
+    "prettier/prettier": "off",
+    "vue/no-deprecated-v-on-native-modifier": "off",
+    "no-console": "off",
+    "no-debugger": "warn",
+    "no-unused-vars": "off",
+    "allow-empty-catch": "off",
+    "no-tabs": "off",
+    "no-mixed-spaces-and-tabs": "off",
+    "vue/no-unused-vars": "off",
+    "vue/no-use-v-if-with-v-for": "warn",
+    "vue/no-unused-components": "warn",
+    "vue/jsx-uses-vars": "error",
+    "vue/multi-word-component-names": "off"
+  }
+}
